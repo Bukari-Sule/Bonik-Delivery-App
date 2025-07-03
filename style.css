@@ -1,0 +1,591 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      color: orange;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+    }
+
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .tel{
+      color: #828282;
+    }
+
+    .sign-in{
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 25px;
+      background: #E24329;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .fa-globe{
+      color: #828282;
+      font-size: 20px;
+    }
+
+    .en-globe{
+      color: #828282;
+    }
+
+    .hero {
+      background: #E24329;
+      color: white;
+      padding: 10px 70px 280px;
+      text-align: left;
+      position: relative;
+      
+    }
+
+    .hero .container{
+        margin-top: 200px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .track-box {
+      margin-top: 40px;
+      display: flex;
+      gap: 10px;
+      max-width: 400px;
+    }
+
+    .track-box input {
+      padding: 10px;
+      flex: 1;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .track-box button {
+      padding: 10px 20px;
+      background: orange;
+      border: none;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      padding: 20px 50px;
+      text-align: center;
+      margin: -50px 20px 0;
+      border-radius: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .feature-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .hero-img {
+      position: absolute;
+      bottom: 230px;
+      right: 40px;
+      max-width: 570px;
+    }
+
+    .why-choose {
+      text-align: center;
+      padding: 40px 50px;
+    }
+
+    .why-choose h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .why-choose p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+
+    .why-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .why-card h4 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .why-card p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .why-card i {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #f0483e;
+    }
+
+    .ambassador {
+      padding: 60px 15px;
+      background: #fff;
+    }
+
+    .ambassador-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .ambassador-img {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .ambassador-content {
+      padding: 45px;
+      max-width: 500px;
+    }
+
+    .ambassador-content h2 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .ambassador-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .apply-btn {
+      background: #E24329;
+      border: none;
+      padding: 10px 30px;
+      color: white;
+      font-size: 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .faq {
+      color: #444B51;
+      padding: 60px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .faq-header h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .faq-header p {
+      font-size: 14px;
+      color: #666;
+      margin: 10px 0 30px;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .faq-item {
+      border-top: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+    }
+
+    .fa-circle-plus {
+      font-size: 20px;
+    }
+
+    .faq-item h4 {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .faq-answer {
+      font-size: 14px;
+      color: #555;
+      margin: 10px 0 0 35px;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-footer {
+      margin-top: 30px;
+    }
+
+    .faq-link {
+      color: red;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .faq-link i {
+      margin-left: 5px;
+    }
+
+        .clients {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .clients h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #444B51;
+      margin-bottom: 10px;
+    }
+
+    .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .client-logos img {
+      object-fit: contain;
+      max-width: 100px;
+    }
+
+    .testimonial {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .testimonial h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .testimonial p {
+      font-size: 14px;
+      color: #666;
+      margin: 10px 0 30px;
+    }
+
+    .testimonial-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-img img {
+      width: 350px;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .testimonial-text {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .quote {
+      font-size: 40px;
+      line-height: 0;
+    }
+
+    .fa-quote-left{
+        font-size: 70px;
+    }
+
+    .stars {
+      font-size: 28px;
+      color: #FF595A;
+      margin-bottom: 10px;
+    }
+
+    .review {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .client-name {
+      font-weight: bold;
+      color: #f0483e;
+    }
+
+    .client-title {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .testimonial-nav{
+        margin-top: 15%;
+    }
+
+    .testimonial-nav button {
+      background: #ddd;
+      border: none;
+      padding: 8px 12px;
+      margin: 10px 5px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .testimonial-nav .next {
+      background: #f0483e;
+      color: white;
+    }
+
+    .partner {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .partner-box {
+      background: #ffecea;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      width: 100%;
+      position: relative;
+    }
+
+    .partner-box h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .partner-box p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .signup-btn {
+      margin-top: 20px;
+      background: white;
+      color: #f0483e;
+      padding: 10px 25px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    #zigzag{
+        display: flex;
+        position: absolute;
+        top: 130px;
+        width: 50px;
+        color: #E24329;
+    }
+
+
+
+    @media (max-width: 768px) {
+
+        .partner-box {
+        padding: 30px 20px;
+      }      
+
+      .partner-box h2 {
+        font-size: 20px;
+      }
+
+              .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .testimonial-text {
+        text-align: center;
+      }
+
+      .client-logos {
+        gap: 20px;
+      }
+      .client-logos img {
+        height: 30px;
+        max-width: 80px;
+      }
+
+            .faq-header h2 {
+        font-size: 22px;
+      }
+      .faq-header p {
+        font-size: 13px;
+      }
+      .faq-question h4 {
+        font-size: 15px;
+      }
+
+            .ambassador-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .ambassador-content {
+        max-width: 100%;
+      }
+
+      .ambassador-img {
+        max-width: 100%;
+      }
+       .why-grid {
+  grid-template-columns: repeat(1, 1fr);
+  overflow-x: auto;
+  scroll-snap-type: y mandatory;
+  max-height: 80vh;
+  scroll-behavior: smooth;
+}
+
+.why-card {
+  scroll-snap-align: start;
+}
+
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+
+      .hamburger {
+        display: block;
+        
+      }
+
+      .sign-in{
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 25px;
+      background: #E24329;
+      border: none;
+      border-radius: 20px;
+      }
+
+      .right-icons {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 100;
+      }
+
+      .right-icons.show {
+        display: flex;
+      }
+
+      .hero-img {
+        position: static;
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .features {
+        margin-top: -60px;
+      }
+
+      .track-box {
+        max-width: 100%;
+      }
+    }
