@@ -79,6 +79,20 @@
         margin-top: 200px;
     }
 
+
+    .svg-container {
+        position: relative;
+}
+
+    .svg-floater {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+}
+
+    
     .hero h1 {
       font-size: 48px;
       font-weight: bold;
@@ -92,24 +106,30 @@
     .track-box {
       margin-top: 40px;
       display: flex;
-      gap: 10px;
+      gap: px;
       max-width: 400px;
+      overflow: hidden;
     }
 
     .track-box input {
-      padding: 10px;
+      padding: 5px 20px;
       flex: 1;
       border: none;
-      border-radius: 5px 0 0 5px;
+      outline: none;
+      border-radius: 50px 0 0 50px;
     }
 
     .track-box button {
-      padding: 10px 20px;
-      background: orange;
+      background: #FF6A00;
       border: none;
-      color: #fff;
-      border-radius: 0 5px 5px 0;
+      color: white;
+      font-weight: bold;
+      padding: 15px 25px;
+      border-radius: 0 50px 50px 0;
       cursor: pointer;
+      font-size: 14px;
+      white-space: nowrap;
+
     }
 
     .features {
@@ -427,33 +447,36 @@
     }
 
     .partner-box {
-      background: #ffecea;
-      padding: 40px;
+      background: #ffe9e3;
+      padding: 60px 90px;
       border-radius: 20px;
       text-align: center;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
       max-width: 700px;
       width: 100%;
       position: relative;
+      
     }
 
     .partner-box h2 {
       font-size: 24px;
       font-weight: bold;
       color: #333;
+      margin-bottom: 25px;
     }
 
     .partner-box p {
       margin-top: 10px;
       font-size: 14px;
       color: #666;
+      margin-bottom: 20px;
     }
 
     .signup-btn {
       margin-top: 20px;
       background: white;
       color: #f0483e;
-      padding: 10px 25px;
+      padding: 15px 55px;
       font-weight: bold;
       border: none;
       border-radius: 30px;
@@ -555,9 +578,199 @@
     background: #00b894;
 }
 
+.app-section {
+  background-color: #ffe9e3;
+  padding: 30px 20px;
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.app-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.app-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.app-text p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.app-benefits {
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.app-benefits li {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.app-benefits span {
+  background: #f0483e;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.app-buttons img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.app-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-image img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20%;
+}
+
+
+.footer {
+  background-color: #ffe9e3;
+  color: #333;
+  padding: 80px 20px 0;
+  margin-top: 10%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 30px;
+  align-items: center;
+  
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 35px;
+}
+
+.footer-social {
+  margin-top: 35px;
+}
+
+.footer-social i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.footer-column li {
+  margin-bottom: 20px;
+}
+
+.footer-column a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+   background-color: #e6462c;
+  width: 100vw;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 
 
     @media (max-width: 768px) {
+
+         .svg-floater {
+    top: -10px;
+    width: 80px;
+         }
+
+          .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+          .app-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .app-benefits li {
+    justify-content: center;
+  }
+
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+  }
 
         .partner-box {
         padding: 30px 20px;
@@ -659,6 +872,14 @@ header {
 
       .right-icons.show {
         display: flex;
+      }
+
+      .hero{
+        padding: 10px 20px 280px;
+      }
+
+      .hero .container{
+        margin-top: 80px;
       }
 
       .hero-img {
